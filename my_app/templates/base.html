@@ -1,10 +1,63 @@
-<!DOCTYPE html>
+{% load static %}
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Gaf list</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewpoint" content="width=device-width, initial-scale =1"/>
+    <link rel="stylesheet" href= "{% static "css/style.css" %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
 </head>
 <body>
-<h2>Testing to see work</h2>
+<nav>
+    <div class="container nav-wrapper">
+        <a href="/" class="brand-logo">Gaf list</a>
+        <ul id ="nav-mobile" class="right">
+            <li><a href="/">Home</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <h1 style="text-align: center;">What do you want to search for on gaf List</h1>
+    <div class="row">
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: EE6E73;">flash_on</i>
+                <p>Fast craiglist webscraper</p>
+                <p class="light center">Scrape away right here with a beautiful GUI. </p>
+            </div>
+        </div>
+        
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: orange;">my_location</i>
+                <p>Filter your searches</p>
+                <p class="light center">We built in funtionality to filter based on the best prices.</p>
+            </div>
+        </div>
+        
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: rgb(0, 255, 128);">chrome_reader_mode</i>
+                <p>A finer front-end to Craiglist</p>
+                <p class="light center">I built this with @H.</p>
+            </div>
+        </div>
+    </div>
+    <form action="{% url 'new' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="search" placeholder="search">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">flash_on</i>
+        </button>
+    </form>
 
+    {% block content %}
+
+    {% endblock content %}
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
