@@ -29,9 +29,7 @@ def new(request):
     post_listings = soup.find_all('li', {'class': 'result-row'})
     #post_title = post_listings[0].find(class_= 'result-title').text
     #post_url = post_listings[0].find('a').get('href')
-    
     #post_price = post_listings[0].find(class_= 'result-price').text
-    
     #print(post_title)
     #print(post_price)
     #print(post_url)
