@@ -1,1 +1,0 @@
-web:gunicorn gaf_list.wsgi
