@@ -3,7 +3,15 @@
     overflow: hidden;
 }
 
-.card_image{
-    height: 250px;
-    overflow: hidden;
+@media (max-width:990px){
+    .resizeimg{
+        height: auto;
+    }
+}
+
+@media (min-width:1000px){
+    .resizeimg{
+        width: auto;
+        height: 250px;
+    }
 }
