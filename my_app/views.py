@@ -6,7 +6,7 @@ from .models import Search
 
 # Create your views here.
 
-BASE_CRAIGSLIST_URL = 'https://losangeles.craigslist.org/search/?query={}'
+BASE_CRAIGSLIST_URL = 'https://vancouver.craigslist.org/search/?query={}'
 BASE_IMAGE_URL = 'https://images.craigslist.org/{}_300x300.jpg'
 
 
