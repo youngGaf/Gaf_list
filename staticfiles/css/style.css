@@ -1,0 +1,17 @@
+.card{
+    height: 400px;
+    overflow: hidden;
+}
+
+@media (max-width:990px){
+    .resizeimg{
+        height: auto;
+    }
+}
+
+@media (min-width:1000px){
+    .resizeimg{
+        width: auto;
+        height: 250px;
+    }
+}
