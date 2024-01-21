@@ -22,7 +22,7 @@ SECRET_KEY = 'lims&m=2+=jgn&p%r1p^ys3%vrhm=d=i=yxes0o%wy9x08e@9-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web-production-bff0.up.railway.app']
+ALLOWED_HOSTS = ['web-production-bff0.up.railway.app', 'gaf-list.up.railway.app']
 
 
 # Application definition
